@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Analysis Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SEO Analysis Tool</h1>
+        
+        <div class="input-section">
+            <div class="url-input">
+                <label for="urlInput">Your Website URL:</label>
+                <input type="url" id="urlInput" placeholder="https://example.com">
+            </div>
+            
+            <div class="url-input">
+                <label for="competitorUrl">Competitor's URL (optional):</label>
+                <input type="url" id="competitorUrl" placeholder="https://competitor.com">
+            </div>
+            
+            <button onclick="analyzeSEO()">Analyze SEO</button>
+        </div>
+
+        <div class="results-section">
+            <h2>Analysis Results</h2>
+            <div id="loadingSpinner" class="spinner hidden"></div>
+            <div class="comparison-container">
+                <div id="results" class="results-content"></div>
+                <div id="competitorResults" class="results-content"></div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
